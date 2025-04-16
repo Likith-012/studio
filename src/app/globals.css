@@ -38,3 +38,9 @@ body {
 .box {
   @apply w-16 h-16 bg-blue-500 flex items-center justify-center text-white transition-transform duration-300; /* Box styles */
 }
+
+/* Rotate the SVG based on data-state */
+[data-state="open"] > svg {
+  transform: rotate(180deg);
+}
+    

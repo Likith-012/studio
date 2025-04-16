@@ -89,9 +89,13 @@ body {
 }
 
 /* Fix for CSS parsing error */
-.\[\&\[data-state\=open\]\>\svg\]\:rotate-180 {
-  @apply rotate-180;
+[data-state="open"] > svg {
+  @apply rotate-180; /* This applies the rotation when the state is open */
 }
-    
+
+/* Optional: Add transition for smooth rotation */
+svg {
+  @apply transition-transform duration-300; /* Add transition for smooth effect */
+}
 
     

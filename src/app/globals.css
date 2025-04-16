@@ -31,7 +31,7 @@ body {
 
 /* Rotate the box based on data-state */
 [data-state="open"] .box {
-  @apply rotate-180; /* Rotate the box when the state is open */
+  transform: rotate(180deg); /* Rotate the box when the state is open */
 }
 
 /* Add transition for smooth rotation */

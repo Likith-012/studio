@@ -47,5 +47,3 @@ body {
 [data-state="open"] .box > svg {
   transform: rotate(180deg);
 } 
-
-    

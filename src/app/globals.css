@@ -40,6 +40,7 @@ body {
 }
 
 /* Rotate the SVG based on data-state */
+/* The problematic code has been replaced with the following: */
 [data-state="open"] > svg {
   transform: rotate(180deg);
 }

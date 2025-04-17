@@ -4,7 +4,6 @@ import {
   Check,
   ChevronsUpDown,
   Circle,
-  Copy,
   Edit,
   ExternalLink,
   File,
@@ -31,17 +30,13 @@ import {
   FileText,
   KanbanSquare,
   CheckSquare,
-  XSquare,
 } from 'lucide-react';
 
 const Icons = {
   arrowRight: ArrowRight,
   check: Check,
-  chevronDown: ChevronsUpDown,
   circle: Circle,
   workflow: Workflow,
-  close: X,
-  copy: Copy,
   dark: Moon,
   edit: Edit,
   externalLink: ExternalLink,
@@ -68,7 +63,6 @@ const Icons = {
   fileText: FileText,
   kanbanSquare: KanbanSquare,
   checkSquare: CheckSquare,
-  xSquare: XSquare,
 };
 
 export {Icons};

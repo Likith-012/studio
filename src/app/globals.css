@@ -1,26 +1,29 @@
-
+/* Base Tailwind directives */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Custom font */
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* CSS variables */
 @layer base {
   :root {
-    --background: 0 0% 98%; /* Neutral white or light grey */
-    --foreground: 0 0% 14%; /* Dark grey or black */
+    --background: 0 0% 98%;
+    --foreground: 0 0% 14%;
     --border: 0 0% 89.8%;
     --radius: 0.5rem;
   }
   .dark {
-    --background: 0 0% 14%; /* Dark grey or black */
-    --foreground: 0 0% 98%; /* Neutral white or light grey */
+    --background: 0 0% 14%;
+    --foreground: 0 0% 98%;
     --border: 0 0% 14.9%;
   }
 }
 
+/* Apply base styles */
 @layer base {
   * {
     @apply border-border;
@@ -30,19 +33,22 @@ body {
   }
 }
 
-/* Rotate the box based on data-state */
+/* Rotate the box on open state */
 [data-state="open"] .box {
-  transform: rotate(180deg); /* Rotate the box when the state is open */
-}
-
-/* Add transition for smooth rotation */
-.box {
-  @apply w-16 h-16 bg-blue-500 flex items-center justify-center text-white transition-transform duration-300; /* Box styles */
-}
-
-/* Rotate the SVG based on data-state */
-/* The problematic code has been replaced with the following: */
-[data-state="open"] > svg {
   transform: rotate(180deg);
 }
-    
+
+/* Base box styles */
+.box {
+  @apply w-16 h-16 bg-blue-500 flex items-center justify-center text-white transition-transform duration-300;
+}
+
+/* Base SVG styles for smooth transition */
+.box > svg {
+  @apply transition-transform duration-300;
+}
+
+/* Rotate the SVG when open */
+[data-state="open"] .box > svg {
+  transform: rotate(180deg);
+}

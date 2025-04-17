@@ -1,6 +1,6 @@
 
 @tailwind base;
-@tailwind components;
+@tailwind components; 
 @tailwind utilities;
 
 body {
@@ -13,12 +13,12 @@ body {
     --background: 0 0% 98%;
     --foreground: 0 0% 14%;
     --border: 0 0% 89.8%;
-    --radius: 0.5rem;
+    --radius: 0.5rem; 
   }
 
   .dark {
     --background: 0 0% 14%;
-    --foreground: 0 0% 98%;
+    --foreground: 0 0% 98%; 
     --border: 0 0% 14.9%;
   }
 }
@@ -27,7 +27,7 @@ body {
 @layer base {
   * {
     @apply border-border;
-  }
+  } 
   body {
     @apply bg-background text-foreground;
   }
@@ -36,14 +36,16 @@ body {
 /* Box style */
 .box {
   @apply w-16 h-16 bg-blue-500 flex items-center justify-center text-white transition-transform duration-300;
-}
+} 
 
 /* SVG base transition */
 .box > svg {
   @apply transition-transform duration-300;
-}
+} 
 
 /* Rotate SVG when data-state="open" */
 [data-state="open"] .box > svg {
   transform: rotate(180deg);
-}
+} 
+
+    

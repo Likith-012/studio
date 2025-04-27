@@ -1,4 +1,5 @@
-"use client"
+'use client';
+
 
 import * as React from "react"
 import { Slot } from "@radix-ui/react-slot"
@@ -558,13 +559,13 @@ const SidebarMenuButton = React.forwardRef<
 
     const button = (
       <Comp
-        ref={ref}
-        data-sidebar="menu-button"
-        data-size={size}
-        data-active={isActive}
-        className={cn(sidebarMenuButtonVariants({ variant, size }), className)}
-        {...props}
-      />
+      ref={ref}
+      data-sidebar="menu-button"
+      data-size={size}
+      suppressHydrationWarning
+      {...props}
+    />
+    
     )
 
     if (!tooltip) {

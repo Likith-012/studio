@@ -1,3 +1,4 @@
+'use client';
 
 import React from 'react';
 import {Card, CardContent, CardHeader, CardTitle} from '@/components/ui/card';
@@ -14,7 +15,7 @@ const ProjectDashboard = () => {
             <CardTitle>Total Projects</CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold">12</div>
+            <div className="text-2xl font-bold">0</div>
           </CardContent>
         </Card>
 
@@ -23,7 +24,7 @@ const ProjectDashboard = () => {
             <CardTitle>Tasks Due</CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold">3</div>
+            <div className="text-2xl font-bold">0</div>
           </CardContent>
         </Card>
 
@@ -32,7 +33,7 @@ const ProjectDashboard = () => {
             <CardTitle>QC Pending</CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold">5</div>
+            <div className="text-2xl font-bold">0</div>
           </CardContent>
         </Card>
 
@@ -41,7 +42,7 @@ const ProjectDashboard = () => {
             <CardTitle>Invoices Overdue</CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold">1</div>
+            <div className="text-2xl font-bold">0</div>
           </CardContent>
         </Card>
       </div>

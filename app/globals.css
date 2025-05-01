@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+
+@layer components {
+  .form-group {
+    @apply mb-4;
+  }
+  .progress-bar {
+    @apply w-32 bg-gray-200 rounded-full h-2;
+  }
+  .status-badge {
+    @apply px-3 py-1 rounded-full text-sm;
+  }
+}
+@layer base {
+  :root {
+    --background: 0 0% 98%;
+    --foreground: 0 0% 14%;
+    --border: 0 0% 89.8%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0 0% 14%;
+    --foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+  }
+
+  * {
+    border-color: hsl(var(--border));
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    background: hsl(var(--background));
+    color: hsl(var(--foreground));
+  }
+}
+
+.box {
+  @apply w-16 h-16 bg-blue-500 flex items-center justify-center text-white;
+}
+
+.box > svg {
+  @apply transition-[transform] duration-300;
+}
+
+[data-state="open"] .box > svg {
+  @apply rotate-180;
+}
